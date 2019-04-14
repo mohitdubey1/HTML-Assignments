@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Export Table to SharePoint List - Step 1 of 2</title>
+	</head>
+	<body>
+		<form name="frm_sharepoint" id="frm_sharepoint">
+			<div>
+				<span>Where do you want to publish your table?</span>
+			</div>
+			<div>
+				<span>
+					<label for="address_select"><u>A</u>ddress:</label>
+				</span>
+				<span>
+					<select id="address_select" name="address_select" accesskey="a">
+						<option value="1">http://</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" id="read_only_chk" name="read_only_chk" value="share_point" accesskey="c"/>
+				</span>
+				<span>
+					<label for="read_only_chk"><u>C</u>reate a read-only connection to the new SharePoint list</label>
+				</span>
+			</div>
+			<div>
+				<span>Provide a name and description for your table.</span>
+			</div>
+			<div>
+				<span>
+					<label for="name_text">Na<u>m</u>e:</label>
+				</span>
+				<span>
+					<input type="text" name="name_text" id="name_text" accesskey="m"/>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="description_textarea"><u>D</u>escription:</label>
+				</span>
+				<span>
+					<textarea id="description_textarea" name="description_textarea" rows="7" cols="35" accesskey="d"></textarea>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" id="help_button" name="help_button" accesskey="h"><u>H</u>elp</button>
+				</span>
+				<span>
+					<button type="button" id="cancel_button" name="cancel_button">Cancel</button>
+				</span>
+				<span>
+					<button type="button" id="back_button" name="back_button" accesskey="b" disabled="disabled"><u>B</u>ack</button>
+				</span>
+				<span>
+					<button type="button" id="next_button" name="next_button" accesskey="n" disabled="disabled"><u>N</u>ext</button>
+				</span>
+				<span>
+					<button type="button" id="finish_button" name="finish_button" accesskey="f" disabled="disabled"><u>F</u>inish</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

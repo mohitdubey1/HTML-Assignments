@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Setup</title>
+	</head>
+	<body>
+		<form id="frm_page_setup" name="frm_page_setup">
+			<ul>
+				<li>Page</li>
+				<li>Margins</li>
+				<li>Header/Footer</li>
+				<li>Sheet</li>
+			</ul>
+			<div>
+				<span>
+					<label for="print_area_text"> Print <u>a</u>rea:</label>
+				</span>
+				<span>
+					<input type="text" id="print_area_text" name="print_area_text" accesskey="a"/>
+				</span>
+				<span>
+					<img alt="img_printarea.jpg" src="image_screen2/img_printarea.jpg"/>
+				</span>
+			</div>
+			<div>
+				<span>Print titles</span>
+			</div>
+			<hr/>
+			<div>
+				<span>
+					<label for="row_text"><u>R</u>ows to repeat at top:</label>
+				</span>
+				<span>
+					<input type="text" id="row_text" name="row_text" accesskey="r"/>
+				</span>
+				<span>
+					<img alt="img_row.jpg" src="image_screen2/img_row.jpg"/>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="columns_text"><u>C</u>olumns to repeat at left:</label>
+				</span>
+				<span>
+					<input type="text" id="columns_text" name="columns_text" accesskey="c"/>
+				</span>
+				<span>
+					<img alt="img_columns.jpg" src="image_screen2/img_columns.jpg"/>
+				</span>
+			</div>
+			<div>
+				<span>Print</span>
+			</div>
+			<hr/>
+			<div>
+				<div>
+					<span>
+						<input type="checkbox" id="gridlines_chk" name="gridlines_chk" value="gridlines" accesskey="g"/>
+					</span>
+					<span>
+						<label for="gridlines_chk"><u>G</u>ridlines</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="black_white_chk" name="black_white_chk" value="black_white" accesskey="b"/>
+					</span>
+					<span>
+						<label for="black_white_chk"><u>B</u>lack and white</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="draft_chk" name="draft_chk" value="draft_quality" accesskey="q"/>
+					</span>
+					<span>
+						<label for="draft_chk">Draft <u>q</u>uality</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="row_chk" name="row_chk" value="row_column" accesskey="l"/>
+					</span>
+					<span>
+						<label for="row_chk">Row and co<u>l</u>umn headings</label>
+					</span>
+				</div>
+			</div>
+			<div>
+				<span>
+					<label for="comments_select">Co<u>m</u>ments:</label>
+				</span>
+				<span>
+					<select id="comments_select" name="comments_select" accesskey="m">
+						<option value="none">(None)</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="cell_select">Cell <u>e</u>rrors as:</label>
+				</span>
+				<span>
+					<select id="cell_select" name="cell_select" accesskey="e">
+						<option value="none">displayed</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>Page order</span>
+			</div>
+			<hr/>
+			<div>
+				<span>
+					<input type="radio" name="down_radio" id="down_over_radio" value="down_over" checked="checked" accesskey="d"/>
+				</span>
+				<span>
+					<label for="down_over_radio"><u>D</u>own, then over</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="radio" name="down_radio" id="over_down_radio" value="over_over" accesskey="v"/>
+				</span>
+				<span>
+					<label for="over_down_radio">O<u>v</u>er, then over</label>
+				</span>
+			</div>
+			<div>
+				<img alt="img_pageorder.jpg" src="image_screen2/img_pageorder.jpg"/>
+			</div>
+			<div>
+				<span>
+					<button type="button" id="print_button" name="print_button" accesskey="p"><u>P</u>rint...</button>
+				</span>
+				<span>
+					<button type="button" id="print_preview_button" name="print_preview_button" accesskey="w">Print Previe<u>w</u></button>
+				</span>
+				<span>
+					<button type="button" id="option_button" name="option_button" accesskey="o"><u>O</u>ptions...</button>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" id="ok_button" name="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" id="cancel_button" name="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fill Effects</title>
+	</head>
+	<body>
+		<form id="frm_fill_effects" name="frm_fill_effects">
+			<ul>
+				<li>Gradient</li>
+				<li>Texture</li>
+				<li>Pattern</li>
+				<li>Picture</li>
+			</ul>
+			<fieldset>
+				<legend>Colors</legend>
+				<div>
+					<div>
+						<span>
+							<input type="radio" id="one_color_radio" name="color_radio" value="one_color" accesskey="n"/>
+						</span>
+						<span>
+							<label for="one_color_radio">O<u>n</u>e color</label>
+						</span>
+					</div>
+					<div>
+						<span>
+							<input type="radio" id="two_color_radio" name="color_radio" value="two_color" checked="checked" accesskey="t"/>
+						</span>
+						<span>
+							<label for="two_color_radio"><u>T</u>wo colors</label>
+						</span>
+					</div>
+					<div>
+						<span>
+							<input type="radio" id="preset_radio" name="color_radio" value="present" accesskey="s"/>
+						</span>
+						<span>
+							<label for="preset_radio">Pre<u>s</u>et</label>
+						</span>
+					</div>
+				</div>
+				<div>
+					<div>
+						<label for="color1_color">Color <u>1</u>:</label>
+					</div>
+					<div>
+						<input type="color" id="color1_color" name="color1_color" value="#ffffff" accesskey="1"/>
+					</div>
+					<div>
+						<label for="color2_color">Color <u>2</u>:</label>
+					<div>
+					</div>
+						<input type="color" name="color2_color" id="color2_color" value="#000000" accesskey="2"/>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Transparency</legend>
+				<div>
+					<span>
+						<label for="from_range">F<u>r</u>om:</label>
+					</span>
+					<span>
+						<input type="range" max="100" min="0" id="from_range" name="from_range" accesskey="r"/>
+					</span>
+					<span>
+						<input type="number" max="100" min="0" value="0" id="from_number" name="from_number"/>
+					</span>
+				</div>
+				<div>
+					<span>
+						<label for="to_range">T<u>o</u>:</label>
+					</span>
+					<span>
+						<input type="range" max="100" min="0" id="to_range" name="to_range" accesskey="o"/>
+					</span>
+					<span>
+						<input type="number" max="100" min="0" id="to_number" name="to_number" value="0"/>
+					</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Shading styles</legend>
+				<div>
+					<span>
+						<input type="radio" name="shading_radio" id="horizontal_radio" value="horizontal" checked="checked" accesskey="z"/>
+					</span>
+					<span>
+						<label for="horizontal_radio">Hori<u>z</u>ontal</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="radio" name="shading_radio" id="vertical_radio" value="vertical" accesskey="v"/>
+					</span>
+					<span>
+						<label for="vertical_radio"><u>V</u>ertical</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="radio" name="shading_radio" id="diag_up_radio" value="diagonal_up" accesskey="u"/>
+					</span>
+					<span>
+						<label for="diag_up_radio">Diagonal <u>u</u>p</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="radio" name="shading_radio" id="diag_down_radio" value="diagonal_down" accesskey="d"/>
+					</span>
+					<span>
+						<label for="diag_down_radio">Diagonal <u>d</u>own</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="radio" name="shading_radio" id="from_corner_radio" value="from_corner" accesskey="f"/>
+					</span>
+					<span>
+						<label for="from_corner_radio"><u>F</u>rom corner</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="radio" name="shading_radio" id="from_center_radio" value="from_center" accesskey="m"/>
+					</span>
+					<span>
+						<label for="from_center_radio">Fro<u>m</u> center</label>
+					</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Variants</legend>
+				<span>
+					<img alt="img_variants.jpg" src="image_screen3/img_variants.jpg"/>
+				</span>
+			</fieldset>
+			<div>
+				<span>
+					<input type="checkbox" id="rotate_chk" name="rotate_chk" value="rotate" disabled="disabled"/>
+				</span>
+				<span>
+					<label for="rotate_chk">Rotate fill effect with shape</label>
+				</span>
+			</div>
+			<div>
+				<span>Sample:</span>
+				<span>
+					<img alt="img_sample.jpg" src="image_screen3/img_sample.jpg"/>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="ok_cancel" id="ok_cancel">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

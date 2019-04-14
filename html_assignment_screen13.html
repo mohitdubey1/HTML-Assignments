@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tabs</title>
+	</head>
+	<body>
+		<form id="frm_tabs" name="frm_tabs">
+			<div>
+				<span>
+					<label for="position_number"><u>T</u>ab stop position:</label>
+				</span>
+				<span>
+					<input type="number" name="position_number" id="position_number" max="100" min="0" accesskey="t"/>
+				</span>
+				<span>
+					<label for="default_number">De<u>f</u>ault tab stops:</label>
+				</span>
+				<span>
+					<input type="number" name="default_number" id="default_number" max="10" min="0" value="2.54" accesskey="f"/>
+				</span>
+			</div>
+			<div>
+				<span>
+					<textarea id="desc_textarea" name="desc_textarea" rows="5" cols="25"></textarea>
+				</span>
+				<span>Tab stops to be cleared:</span>
+			</div>
+			<fieldset>
+				<legend>Alignment</legend>
+				<div>
+					<span>
+						<input type="radio" id="left_radio" name="alig_radio" value="left" accesskey="l" checked="checked"/>
+					</span>
+					<span>
+						<label for="left_radio"><u>L</u>eft</label>
+					</span>
+					<span>
+						<input type="radio" id="center_radio" name="alig_radio" value="center" accesskey="c"/>
+					</span>
+					<span>
+						<label for="center_radio"><u>C</u>enter</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="radio" id="right_radio" name="alig_radio" value="right" accesskey="r"/>
+					</span>
+					<span>
+						<label for="right_radio"><u>R</u>ight</label>
+					</span>
+					<span>
+						<input type="radio" id="decimal_radio" name="alig_radio" value="decimal" accesskey="d"/>
+					</span>
+					<span>
+						<label for="decimal_radio"><u>D</u>ecimal</label>
+					</span>
+				</div>
+			</fieldset>
+			<div>
+				<span>
+					<button type="button" id="set_button" name="set_button" disabled="disabled" accesskey="s"><u>S</u>et</button>
+				</span>
+				<span>
+					<button type="button" id="clear_button" name="clear_button" disabled="disabled" accesskey="e">Cl<u>e</u>ar</button>
+				</span>
+				<span>
+					<button type="button" id="clear_all_button" name="clear_all_button" accesskey="a">Clear <u>A</u>ll</button>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

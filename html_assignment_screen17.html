@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cross-reference</title>
+	</head>
+	<body>
+		<form id="frm_cross_reference" name="frm_cross_reference">
+			<div>
+				<div>
+					<label for="reference_select">Reference <u>t</u>ype:</label>
+				</div>
+				<div>
+					<select id="reference_select" name="reference_select" accesskey="t">
+						<option value="1">Numbered item</option>
+					</select>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="hyperlink_chk" name="hyperlink_chk" value="hyperlink" checked="checked" accesskey="h"/>
+					</span>
+					<span>
+						<label for="hyperlink_chk">Insert as <u>h</u>yperlink</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="separate_no_chk" name="separate_no_chk" value="separate" disabled="disabled"/>
+					</span>
+					<span>
+						<label for="separate_no_chk">Separate numbers with</label>
+					</span>
+					<span>
+						<input type="text" name="separate_no_text" id="separate_no_text" disabled="disabled"/>
+					</span>
+				</div>
+			</div>
+			<div>
+				<div>
+					<label for="insert_reference_select">Insert <u>r</u>eference to:</label>
+				</div>
+				<div>
+					<select id="insert_reference_select" name="insert_reference_select" accesskey="r">
+						<option value="2">Paragraph number</option>
+					</select>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="above_below_chk" name="above_below_chk" value="include" accesskey="n"/>
+					</span>
+					<span>
+						<label for="above_below_chk">I<u>n</u>clude above/below</label>
+					</span>
+				</div>
+			</div>
+			<div>
+				<span>
+					<label for="item_select">For <u>w</u>hich numbered item:</label>
+				</span>
+			</div>
+			<div>
+				<select name="item_select" id="item_select" size="10" multiple="multiple" accesskey="w"></select>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="insert_button" id="insert_button" disabled="disabled">Insert</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

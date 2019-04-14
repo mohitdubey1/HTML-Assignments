@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fill Effects</title>
+	</head>
+	<body>
+		<form id="frm_fill_effects" name="frm_fill_effects">
+			<ul>
+				<li>Gradient</li>
+			</ul>
+			<fieldset>
+				<legend>Colors</legend>
+				<div>
+					<div>
+						<span>
+							<input type="radio" id="one_color_radio" name="color_radio" value="one_color" disabled="disabled"/>
+						</span>
+						<span>
+							<label for="one_color_radio">One color</label>
+						</span>
+					</div>
+					<div>
+						<span>
+							<input type="radio" id="two_color_radio" name="color_radio" value="two_color" accesskey="t" checked="checked"/>
+						</span>
+						<span>
+							<label for="two_color_radio"><u>T</u>wo colors</label>
+						</span>
+					</div>
+					<div>
+						<span>
+							<input type="radio" id="preset_radio" name="color_radio" value="present" disabled="disabled"/>
+						</span>
+						<span>
+							<label for="preset_radio">Preset</label>
+						</span>
+					</div>
+				</div>
+				<div>
+					<label for="color1_color">Color <u>1</u>:</label>
+				</div>
+				<div>
+					<input type="color" id="color1_color" name="color1_color" value="#ffffff" accesskey="1"/>
+				</div>
+				<div>
+					<label for="color2_color">Color <u>2</u>:</label>
+				</div>
+				<div>
+					<input type="color" name="color2_color" id="color2_color" value="#6495ed" accesskey="2"/>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Shading styles</legend>
+				<div>
+					<input type="radio" name="shading_radio" id="horizontal_radio" value="horizontal" accesskey="z"/>
+					<label for="horizontal_radio">Hori<u>z</u>ontal</label>
+				</div>
+				<div>
+					<input type="radio" name="shading_radio" id="vertical_radio" value="vertical" accesskey="v"/>
+					<label for="vertical_radio"><u>V</u>ertical</label>
+				</div>
+				<div>
+					<input type="radio" name="shading_radio" id="diag_up_radio" value="diagonal_up" accesskey="u"/>
+					<label for="diag_up_radio">Diagonal <u>u</u>p</label>
+				</div>
+				<div>
+					<input type="radio" name="shading_radio" id="diag_down_radio" value="diagonal_down" accesskey="d"/>
+					<label for="diag_down_radio">Diagonal <u>d</u>own</label>
+				</div>
+				<div>
+					<input type="radio" name="shading_radio" id="from_corner_radio" value="from_corner" accesskey="f"/>
+					<label for="from_corner_radio"><u>F</u>rom corner</label>
+				</div>
+				<div>
+					<input type="radio" name="shading_radio" id="from_center_radio" value="from_center" accesskey="m" checked="checked"/>
+					<label for="from_center_radio">Fro<u>m</u> center</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>
+					<label>V<u>a</u>riants</label>
+				</legend>
+				<span>
+					<img alt="variants_img.jpg" src="image_screen12/variants_img.jpg"/>
+				</span>
+			</fieldset>
+			<div>Sample:</div>
+			<div>
+				<img alt="sample_img.jpg" src="image_screen12/sample_img.jpg"/>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="ok_cancel" id="ok_cancel">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

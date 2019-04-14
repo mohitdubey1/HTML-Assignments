@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DSpellCheck Setting</title>
+	</head>
+	<body>
+		<form id="frm_dspellcheck" name="frm_dspellcheck">
+			<ul>
+				<li>Simple</li>
+				<li>Advanced</li>
+			</ul>
+			<div>
+				<span>
+					<label for="library_select">Library:</label>
+				</span>
+				<span>
+					<select id="library_select" name="library_select">
+						<option value="hunspell">Hunspell</option>
+					</select>
+				</span>
+			</div>
+			<fieldset>
+				<legend>Hunspell Setting</legend>
+				<fieldset>
+					<legend>Hunspell Dictionaries Path</legend>
+					<div>
+						<span>
+							<input type="text" name="location_text" id="location_text" value="C:\Users\ucertify\AppData\Roaming\Notepad++"/>
+						</span>
+						<span>
+							<input type="file" name="search_file" id="search_file"/>
+						</span>
+					</div>
+					<div>
+						<span>
+							<select id="user_select" name="user_select">
+								<option value="2">For Current User</option>
+							</select>
+						</span>
+						<span>
+							<button type="button" name="reset_button" id="reset_button">Reset to Default</button>
+						</span>
+					</div>
+				</fieldset>
+				<div>
+					<span>
+						<input type="checkbox" name="decode_chk" id="decode_chk" value="decode_language" checked="checked"/>
+					</span>
+					<span>
+						<label for="decode_chk">Decode Lang. Names</label>
+					</span>
+					<span>
+						<button type="button" name="download_button" id="download_button">Download Dictionaries...</button>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" name="unified_chk" value="dictionary" id="unified_chk"/>
+					</span>
+					<span>
+						<label for="unified_chk">Unified User Dictionary</label>
+					</span>
+					<span>
+						<button type="button" name="remove_button" id="remove_button">Remove Dictionaries...</button>
+					</span>
+				</div>
+			</fieldset>
+			<div>
+				<span>
+					<label for="language_select">Language:</label>
+				</span>
+				<span>
+					<select id="language_select" name="language_select">
+						<option value="english">English (Great Britain)</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="max_number">Max Number of Suggestions:</label>
+				</span>
+				<span>
+					<input type="number" name="max_number" id="max_number" min="1" max="100" value="5"/>
+				</span>
+			</div>
+			<fieldset>
+				<legend>File Types (Separate with semicolon (";"))</legend>
+				<div>
+					<span>
+						<input type="radio" name="check_those_radio" id="check_radio" value="check_only" checked="checked"/>
+					</span>
+					<span>
+						<label for="check_radio">Check only those:</label>
+					</span>
+					<span>
+						<input type="radio" name="check_those_radio" id="not_check_radio" value="not_check"/>
+					</span>
+					<span>
+						<label for="not_check_radio">Check only NOT those:</label>
+					</span>
+				</div>
+				<div>
+					<input type="text" name="all_text" id="all_text" value="*.*"/>
+				</div>
+			</fieldset>
+			<div>
+				<span>
+					<input type="checkbox" name="comments_chk" id="comments_chk" value="comments" checked="checked"/>
+				</span>
+				<span>
+					<label for="comments_chk">Check Only Comments and Strings if Possible</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="special_select">Suggestions Control:</label>
+				</span>
+				<span>
+					<select name="special_select" id="special_select">
+						<option value="special">Special Suggestion Button</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+				<span>
+					<button type="button" name="apply_button" id="apply_button">Apply</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

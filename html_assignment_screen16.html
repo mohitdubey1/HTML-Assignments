@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Options</title>
+	</head>
+	<body>
+		<form id="frm_options" name="frm_options">
+			<ul>
+				<li>Custom Forms</li>
+			</ul>
+			<fieldset>
+				<legend>Temporary storage for forms</legend>
+				<div>
+					<span>
+						<label for="hard_disk_no">Maximum space on hard disk:</label>
+					</span>
+					<span>
+						<input type="number" id="hard_disk_no" name="hard_disk_no" min="1024" max="10240" value="2048"/>
+					</span>
+					<span>kilobytes</span>
+				</div>
+			</fieldset>
+			<div>
+				<span>
+					<input type="checkbox" name="allow_frm_chk" id="allow_frm_chk" value="bypass_outlook"/>
+				</span>
+				<span>
+					<label for="allow_frm_chk">Allow forms that bypass Outlook</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="manage_frm_button" id="manage_frm_button">Manage Forms...</button>
+				</span>
+				<span>
+					<button type="button" name="password_button" id="password_button">Password...</button>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+				<span>
+					<button type="button" name="apply_button" id="apply_button" disabled="disabled">Apply</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

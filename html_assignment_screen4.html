@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Find in Files</title>
+	</head>
+	<body>
+		<form id="frm_find_files" name="frm_find_files">
+			<ul>
+				<li>Find</li>
+				<li>Replace</li>
+				<li>Find in Files</li>
+				<li>Mark</li>
+			</ul>
+			<div>
+				<div>
+					<span>
+						<label for="find_select">Find what :</label>
+					</span>
+					<span>
+						<select id="find_select" name="find_select">
+							<option value="find" selected="selected">media-object</option>
+						</select>
+					</span>
+				</div>
+				<div>
+					<span>
+						<label for="replace_select">Replace with :</label>
+					</span>
+					<span>
+						<select id="replace_select" name="replace_select">
+							<option value="replace">#carousel_slider</option>
+						</select>
+					</span>
+				</div>
+				<div>
+					<span>
+						<label for="filters_select">Filters :</label>
+					</span>
+					<span>
+						<select id="filters_select" name="filters_select"></select>
+					</span>
+				</div>
+				<div>
+					<span>
+						<label for="dir_file">Directory :</label>
+					</span>
+					<span>
+						<select id="dir_select" name="dir_select"></select>
+					</span>
+					<span>
+						<input type="file" name="dir_file" id="dir_file"/>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="match_chk" name="match_chk" value="match"/>
+					</span>
+					<span>
+						<label for="match_chk">Match whole word only</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="match_case_chk" name="match_case_chk" value="match_case"/>
+					</span>
+					<span>
+						<label for="match_case_chk">Match case</label>
+					</span>
+				</div>
+			</div>
+			<div>
+				<div>
+					<button type="button" id="find_button" name="find_button" autofocus="autofocus">Find All</button>
+				</div>
+				<div>
+					<button type="button" id="replace_button" name="replace_button">Replace in Files</button>
+				</div>
+				<div>
+					<button type="button" id="close_button" name="close_button">Close</button>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="current_doc_chk" name="current_doc_chk" value="follow_current"/>
+					</span>
+					<span>
+						<label for="current_doc_chk">Follow current doc.</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="sub_folder_chk" name="sub_folder_chk" value="su_folder" checked="checked"/>
+					</span>
+					<span>
+						<label for="sub_folder_chk">In all sub-folders</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="hid_folder_chk" name="hid_folder_chk" value="hidden_floder"/>
+					</span>
+					<span>
+						<label for="hid_folder_chk">In hidden folders</label>
+					</span>
+				</div>
+			</div>
+			<fieldset>
+				<legend>Search Mode</legend>
+				<div>
+					<span>
+						<input type="radio" id="normal_radio" name="search_radio" value="normal" checked="checked"/>
+					</span>
+					<span>
+						<label for="normal_radio">Normal</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="radio" id="extended_radio" name="search_radio" value="expanded"/>
+					</span>
+					<span>
+						<label for="extended_radio">Extended (\n, \r, \0, \x...)</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="radio" id="regular_radio" name="search_radio" value="regular"/>
+					</span>
+					<span>
+						<label for="regular_radio">Regular expression</label>
+					</span>
+					<span>
+						<input type="checkbox" id="matches_chk" name="matches_chk" value="newline"/>
+					</span>
+					<span>
+						<label for="matches_chk">. matches newline</label>
+					</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>
+					<span>
+						<input type="checkbox" id="transparency_chk" name="transparency_chk" value="transparency" checked="checked"/>
+					</span>
+					<span>
+						<label for="transparency_chk">Transparency</label>
+					</span>
+				</legend>
+				<div>
+					<span>
+						<input type="radio" id="losing_radio" name="transparency_radio" value="focus" checked="checked"/>
+					</span>
+					<span>
+						<label for="losing_radio">On losing focus</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="radio" id="always_radio" value="always" name="transparency_radio"/>
+					</span>
+					<span>
+						<label for="always_radio">Always</label>
+					</span>
+				</div>
+				<div>
+					<input type="range" id="always_rang" name="always_rang" max="100" min="0"/>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Footnote and Endnote</title>
+	</head>
+	<body>
+		<form id="frm_note" name="frm_note">
+			<div>
+				<span>Location</span>
+			</div>
+			<hr/>
+			<div>
+				<span>
+					<input type="radio" name="note_radio" id="footnote_radio" value="footnotes" checked="checked" accesskey="f"/>
+					<label for="footnote_radio"><u>F</u>ootnotes:</label>
+				</span>
+				<span>
+					<select id="footnote_select" name="footnote_select">
+						<option value="1">Bottom of page</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="radio" name="note_radio" id="endnote_radio" value="endnote" accesskey="e"/>
+					<label for="endnote_radio"><u>E</u>ndnotes:</label>
+				</span>
+				<span>
+					<select id="endnote_select" name="endnote_select" disabled="disabled">
+						<option value="2">End of document</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" id="convert_button" name="convert_button" disabled="disabled">Convert...</button>
+				</span>
+			</div>
+			<div>
+				<span>Footnote layout</span>
+			</div>
+			<hr/>
+			<div>
+				<span>
+					<label for="columns_select">C<u>o</u>lumns:</label>
+				</span>
+				<span>
+					<select id="columns_select" name="columns_select" accesskey="o">
+						<option value="3">Match section layout</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>Format</span>
+			</div>
+			<hr/>
+			<div>
+				<span>
+					<label for="no_format_select"><u>N</u>umber format:</label>
+				</span>
+				<span>
+					<select id="no_format_select" name="no_format_select" accesskey="n">
+						<option value="3">1,2,3, ...</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="custom_text">C<u>u</u>stom mark:</label>
+				</span>
+				<span>
+					<input type="text" name="custom_text" id="custom_text" accesskey="u"/>
+				</span>
+				<span>
+					<button type="button" name="symbol_button" id="symbol_button" accesskey="y">S<u>y</u>mbol...</button>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="start_number"><u>S</u>tart at:</label>
+				</span>
+				<span>
+					<input type="number" id="start_number" name="start_number" value="1" min="1" max="100" accesskey="s"/>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="numbering_select">Nu<u>m</u>bering:</label>
+				</span>
+				<span>
+					<select id="numbering_select" name="numbering_select" accesskey="m">
+						<option value="4">Continuous</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>Apply changes</span>
+			</div>
+			<hr/>
+			<div>
+				<span>
+					<label for="apply_chang_select">A<u>p</u>ply Changes to:</label>
+				</span>
+				<span>
+					<select id="apply_chang_select" name="apply_chang_select" accesskey="p">
+						<option value="5">Whole document</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" id="insert_button" name="insert_button" autofocus="autofocus" accesskey="i"><u>I</u>nsert</button>
+				</span>
+				<span>
+					<button type="button" id="cancel_button" name="cancel_button">Cancel</button>
+				</span>
+				<span>
+					<button type="button" id="apply_button" name="apply_button" disabled="disabled">Apply</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

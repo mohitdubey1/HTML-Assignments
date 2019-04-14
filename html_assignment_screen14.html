@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Internet Free/Busy Options</title>
+	</head>
+	<body>
+		<form id="frm_internet" name="frm_internet">
+			<div>
+				<span>
+					<img alt="free_internet.jpg" src="image_screen14/free_internet.jpg"/>
+				</span>
+				<span>Free/busy information is used by people sending meeting requests, to determine when you are available for meetings.</span>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" id="publish_chk" name="publish_chk" value="publish_location"/>
+				</span>
+				<span>
+					<label for="publish_chk">Publish at location:</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="text" name="text1" id="text1" disabled="disabled"/>
+				</span>
+			</div>
+			<div>
+				<span>Publish</span>
+				<span>
+					<input type="number" name="month_no" id="month_no" max="200" min="1" value="151" disabled="disabled"/>
+				</span>
+				<span>
+					<label for="month_no">month(s)</label>
+				</span>
+				<span>of Calendar free/busy information Update free/busy information every</span>
+				<span>
+					<input type="number" name="minutes_no" id="minutes_no" max="59" min="1" value="15" disabled="disabled"/>
+				</span>
+				<span>
+					<label for="minutes_no">minutes</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="search_location">Search location:</label>
+				</span>
+				<span>
+					<input type="search" id="search_location" name="search_location"/>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

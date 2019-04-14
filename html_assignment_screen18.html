@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms Manager</title>
+	</head>
+	<body>
+		<form id="frm_manager" name="frm_manager">
+			<div>
+				<span>
+					<input type="text" name="set_text" id="set_text"/>
+				</span>
+				<span>
+					<button type="button" name="set_button" id="set_button">Set...</button>
+				</span>
+			</div>
+			<div>
+				<select name="item_set_select" id="item_set_select" size="10" multiple="multiple"></select>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" name="categories_chk" value="categories" id="categories_chk"/>
+				</span>
+				<span>
+					<label for="categories_chk">Show categories</label>
+				</span>
+			</div>
+			<div>
+				<div>
+					<button type="button" name="copy_button" id="copy_button" disabled="disabled">Copy</button>
+				</div>
+				<div>
+					<button type="button" name="update_button" id="update_button" disabled="disabled">Update</button>
+				</div>
+				<div>
+					<button type="button" name="delete_button" id="delete_button" disabled="disabled">Delete</button>
+				</div>
+				<div>
+					<button type="button" name="properties_button" id="properties_button" disabled="disabled">Properties...</button>
+				</div>
+				<div>
+					<button type="button" name="clear_cache_button" id="clear_cache_button">Clear Cache</button>
+				</div>
+			</div>
+			<div>
+				<span>
+					<input type="text" name="personal_frm_text" id="personal_frm_text" value="Personal Forms"/>
+				</span>
+				<span>
+					<button type="button" name="personal_frm_button" id="personal_frm_button">Set...</button>
+				</span>
+			</div>
+			<div>
+				<select name="personal_frm_select" id="personal_frm_select" size="10" multiple="multiple"></select>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="install_button" id="install_button">Install...</button>
+				</span>
+				<span>
+					<button type="button" name="save_as_button" id="save_as_button" disabled="disabled">Save As...</button>
+				</span>
+			</div>
+			<fieldset>
+				<legend>Description</legend>
+				<div>
+					<span>Form</span>
+					<span>Version:</span>
+					<span>Contact:</span>
+				</div>
+			</fieldset>
+			<div>
+				<center>
+					<button type="button" name="close_button" id="close_button" autofocus="autofocus">Close</button>
+				</center>
+			</div>
+		</form>
+	</body>
+</html>

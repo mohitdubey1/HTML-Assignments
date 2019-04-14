@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DSpellCheck Setting</title>
+	</head>
+	<body>
+		<form id="frm_dspellcheck" name="frm_dspellcheck">
+			<ul>
+				<li>Simple</li>
+				<li>Advanced</li>
+			</ul>
+			<div>
+				<span>
+					<label for="delimiters_text">Delimiters:</label>
+				</span>
+				<span>
+					<input type="text" name="delimiters_text" id="delimiters_text"/>
+				</span>
+				<span>
+					<input type="reset" id="reset_input" name="reset_input"/> 
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="typing_no">Typing Recheck Delay (ms)</label>:
+				</span>
+				<span>
+					<input type="number" name="typing_no" id="typing_no" max="1000" min="100" value="500"/>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="size_no">Buffer Size for Find Next/Prev. Mistake (Kb):</label>
+				</span>
+				<span>
+					<input type="number" name="size_no" id="size_no" max="100" min="1" value="4"/>
+				</span>
+			</div>
+			<fieldset>
+				<legend>Ignore Words</legend>
+				<div>
+					<span>
+						<input type="checkbox" id="containing_no_chk" name="containing_no_chk" value="containing_no" checked="checked"/>
+					</span>
+					<span>
+						<label for="containing_no_chk">Containing Numbers</label>
+					</span>
+					<span>
+						<input type="checkbox" id="capital_chk" name="capital_chk" value="capital_letter"/>
+					</span>
+					<span>
+						<label for="capital_chk">Starting with Capital Letter</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="having_not_chk" name="having_not_chk" value="having_not" checked="checked"/>
+					</span>
+					<span>
+						<label for="having_not_chk">Having not First Capital Letter</label>
+					</span>
+					<span>
+						<input type="checkbox" id="all_letters_chk" name="all_letters_chk" value="all_letters" checked="checked"/>
+					</span>
+					<span>
+						<label for="all_letters_chk">All Letters Capital</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="having_chk" name="having_chk" value="having" checked="checked"/>
+					</span>
+					<span>
+						<label for="having_chk">Having _</label>
+					</span>
+					<span>
+						<input type="checkbox" id="start_chk" name="start_chk" value="start"/>
+					</span>
+					<span>
+						<label for="start_chk">That Start or End with '</label>
+					</span>
+					<span>
+						<input type="checkbox" id="one_letter_chk" name="one_letter_chk" value="one_letter"/>
+					</span>
+					<span>
+						<label for="one_letter_chk">One Letter</label>
+					</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Underline Style</legend>
+				<div>
+					<span>
+						<input type="color" id="underline_color" name="underline_color" value="#ff0000"/>
+					</span>
+					<span>
+						<select id="squiggle_select" name="squiggle_select">
+							<option value="1">Squiggle</option>
+						</select>
+					</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Suggestion Button</legend>
+				<div>
+					<div>
+						<label for="size_range">Size:</label>
+					</div>
+					<div>
+						<input type="range" name="size_range" id="size_range" max="100" min="0"/>
+					</div>
+					<div>
+						<label for="transparency_range">Transparency:</label>
+					</div>
+					<div>
+						<input type="range" name="transparency_range" id="transparency_range" max="100" min="0"/>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Conversion Settings</legend>
+				<div>
+					<span>
+						<input type="checkbox" id="cyrillic_chk" name="cyrillic_chk" value="cyrillic"/>
+					</span>
+					<span>
+						<label for="cyrillic_chk">Cyrillic: Count io (&#1105;) as e</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="count_chk" name="count_chk" checked="checked" value="count_as"/>
+					</span>
+					<span>
+						<label for="count_chk">Count ' as '</label>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="checkbox" id="remove_chk" name="remove_chk" value="remove" checked="checked"/>
+					</span>
+					<span>
+						<label for="remove_chk">Remove First and Last '</label>
+					</span>
+				</div>
+			</fieldset>
+			<div>
+				<span>
+					<button type="button" id="ok_button" name="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" id="cancel_button" name="cancel_button">Cancel</button>
+				</span>
+				<span>
+					<button type="button" id="apply_button" name="apply_button">Apply</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

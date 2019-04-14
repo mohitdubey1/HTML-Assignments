@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Automatic Accept or Decline</title>
+	</head>
+	<body>
+		<form id="frm_decline" name="frm_decline">
+			<div>
+				<span>
+					<img alt="decline_meeting.jpg" src="image_screen15/decline_meeting.jpg"/>
+				</span>
+				<span>Automatically accept or decline meeting requests.</span>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" name="automatically_chk" id="automatically_chk" value="canceled_meetings" accesskey="a" disabled="disabled"/>
+				</span>
+				<span>
+					<label for="automatically_chk"><u>A</u>utomatically accept meeting requests and remove canceled  meetings</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" name="decline_chk" id="decline_chk" value="appointment_meeting" accesskey="d" disabled="disabled"/>
+				</span>
+				<span>
+					<label for="decline_chk">Automatically <u>d</u>ecline meeting requests that conflict with an existing appointment or meeting</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" name="recurring_chk" id="recurring_chk" value="recurring_meeting" accesskey="c" disabled="disabled"/>
+				</span>
+				<span>
+					<label for="recurring_chk">Automatically de<u>c</u>line recurring meeting requests</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

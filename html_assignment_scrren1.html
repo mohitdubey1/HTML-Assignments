@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Font</title>
+	</head>
+	<body>
+		<form id="frm_set" name="frm_set">
+			<ul>
+				<li>
+					<label>Fo<u>n</u>t</label>
+				</li>
+				<li>
+					<label>Cha<u>r</u>acter Spacing</label>
+				</li>
+			</ul>
+			<div>
+				<span>
+					<label for="font_family_text"><u>F</u>ont:</label>
+				</span>
+				<span>
+					<input type="text" id="font_family_text" name="font_family_text" value="Adobe Gothic std B" accesskey="f"/>
+				</span>
+				<span>
+					<select id="font_family_select" name="font_family_select" multiple="multiple" size="5">
+						<option value="1">Adobe Fan Heiti Std B</option>
+						<option value="2">Adobe Fangsong Std R</option>
+						<option value="3">Adobe Garamond Pro</option>
+						<option value="4">Adobe Garamond Pro Bold</option>
+						<option value="5" selected="selected">Adobe Gothic Std B</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="font_style_text">Font st<u>y</u>le:</label>
+				</span>
+				<span>
+					<input type="text" name="font_style_text" id="font_style_text" value="B" accesskey="y"/>
+				</span>
+				<span>
+					<select id="font_style_select" name="font_style_select" multiple="multiple">
+						<option value="1" selected="selected">B</option>
+						<option value="2">B Italic</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="font_size_text"><u>S</u>ize:</label>
+				</span>
+				<span>
+					<input type="text" name="font_size_text" id="font_size_text" value="11" accesskey="s"/>
+				</span>
+				<span>
+					<select id="font_size_select" name="font_size_select" size="5" multiple="multiple">
+						<option value="1">8</option>
+						<option value="2">9</option>
+						<option value="3">10</option>
+						<option value="4" selected="selected">11</option>
+						<option value="5">12</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>					
+					<label for="font_color_select"> Font <u>c</u>olor:</label>
+				</span>
+				<span>
+					<select id="font_color_select" name="font_color_select" accesskey="c">
+						<option value="Automatic">Automatic</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="underline_style_select"><u>U</u>nderline style:</label>
+				</span>
+				<span>
+					<select id="underline_style_select" name="underline_style_select" accesskey="u">
+						<option value="none">(none)</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="font_underline_color_select"> Underline color:</label>
+				</span>
+				<span>
+					<select id="font_underline_color_select" name="font_underline_color_select" disabled="disabled">
+					<option value="automatic">Automatic</option>
+					</select>
+				</span>
+			</div>	
+			<p>Effects</p>
+			<hr/>
+			<div>
+				<span>
+					<input type="checkbox" id="effects_strik_chk" name="effects_strik_chk" value="strikethrough" accesskey="k"/>
+					<label for="effects_strik_chk">Stri<u>k</u>ethrough</label>
+				</span>
+				<span>
+					<input type="checkbox" id="effects_shadow_chk" name="effects_shadow_chk" value="shadow" accesskey="w"/>
+					<label for="effects_shadow_chk">Shado<u>w</u></label>
+				</span>
+				<span>
+					<input type="checkbox" id="effects_small_chk" name="effects_small_chk" value="small_cap" accesskey="m"/>
+					<label for="effects_small_chk">S<u>m</u>all cap</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" id="effects_double_chk" name="effects_double_chk" value="double_strikethrough" accesskey="l"/>
+					<label for="effects_double_chk">Doub<u>l</u>e strikethrough</label>
+				</span>
+				<span>
+					<input type="checkbox" id="effects_outline_chk" name="effects_outline_chk" value="outline" disabled="disabled"/>
+					<label for="effects_outline_chk">Outline</label>
+				</span>
+				<span>
+					<input type="checkbox" id="effects_all_cap_chk" name="effects_all_cap_chk" value="all_caps" accesskey="a"/>
+					<label for="effects_all_cap_chk"><u>A</u>ll caps</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" id="effects_super_chk" name="effects_super_chk" value="supscript" accesskey="p"/>
+					<label for="effects_super_chk">Su<u>p</u>erscript</label>
+				</span>
+				<span>
+					<input type="checkbox" id="effects_emboss_chk" name="effects_emboss_chk" value="emboss" accesskey="e"/>
+					<label for="effects_emboss_chk"><u>E</u>mboss</label>
+				</span>
+				<span>
+					<input type="checkbox" id="effects_hidden_chk" name="effects_hidden_chk" value="hidden" accesskey="h"/>
+					<label for="effects_hidden_chk"><u>H</u>idden</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" id="effects_subscript_chk" name="effects_subscript_chk" value="subscript" accesskey="b"/>
+					<label for="effects_subscript_chk">Su<u>b</u>script</label>
+				</span>
+				<span>
+					<input type="checkbox" id="effects_engrave_chk" name="effects_engrave_chk" value="engrave" accesskey="g"/>
+					<label for="effects_engrave_chk">En<u>g</u>rave</label>
+				</span>
+			</div>
+			<p>Preview</p>
+			<hr/>
+			<fieldset>
+				<center>
+					<b>Adobe Gothic Std B</b>
+				</center>
+			</fieldset>	
+			<p>This is an OpenType font. This font will be used on both printer and screen.</p>
+			<div>
+				<span>
+					<button type="button" id="default_button" name="default_button" accesskey="d"><u>D</u>efault..</button>
+				</span>
+				<span>
+					<button type="button" id="ok_button" name="ok_button">Ok</button>
+				</span>
+				<span>
+					<button type="button" id="cancel_button" name="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>
+
+

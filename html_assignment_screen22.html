@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Call</title>
+	</head>
+	<body>
+		<form name="frm_new_call" id="frm_new_call">
+			<fieldset>
+				<legend>Number to dial</legend>
+				<div>
+					<span>
+						<label for="contact_select">Contact:</label>
+					</span>
+					<span>
+						<select id="contact_select" name="contact_select"></select>
+					</span>
+				</div>
+				<div>
+					<span>
+						<label for="number_select">Number:</label>
+					</span>
+					<span>
+						<select id="number_select" name="number_select"></select>
+					</span>
+				</div>
+				<div>
+					<div>
+						<button type="button" name="open_cont_button" id="open_cont_button" disabled="disabled">Open Contact</button>
+					</div>
+					<div>
+						<button type="button" name="dialing_button" id="dialing_button">Dialing Properties...</button>
+					</div>
+				</div>
+			</fieldset>
+			<div>
+				<span>Call status:</span>
+				<span>On hook</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="start_call_button" id="start_call_button" disabled="disabled">Start Call</button>
+				</span>
+				<span>
+					<button type="button" name="end_call_button" id="end_call_button" disabled="disabled">End Call</button>
+				</span>
+				<span>
+					<button type="button" name="dialing_option_button" id="dialing_option_button">Dialing Options...</button>
+				</span>
+				<span>
+					<button type="button" name="close_button" id="close_button">Close</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>
